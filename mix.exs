@@ -50,7 +50,6 @@ defmodule CrudApp.MixProject do
       {:jason, "~> 1.2"},
       {:plug_cowboy, "~> 2.5"},
       {:credo, "~> 1.6"}
-
     ]
   end
 
