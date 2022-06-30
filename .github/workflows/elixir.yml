@@ -23,7 +23,7 @@ jobs:
           POSTGRES_DB: durga_test
         ports: ['5432:5432']
         options: --health-cmd pg_isready --health-interval 10s --health-timeout 5s --health-retries 5
-        
+
     steps:
     - uses: actions/checkout@v3
     - name: Set up Elixir
@@ -43,3 +43,5 @@ jobs:
       run: mix test
     - name: check formatted code
       run: mix format --check-formatted
+    - name: Run Credo
+      run: mix credo --strict
