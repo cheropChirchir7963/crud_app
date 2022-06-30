@@ -1,4 +1,7 @@
 defmodule CrudAppWeb.Telemetry do
+  @moduledoc """
+  Defines the supervisor responsible for managing the telemetry processes
+  """
   use Supervisor
   import Telemetry.Metrics
 
